@@ -1,0 +1,22 @@
+:root{--home-white:#f8faff;--home-muted:#b7bfd1;--home-line:rgba(255,255,255,.16);--home-panel:rgba(20,25,36,.88)}
+html,body{color:var(--home-white);background:#05070c;color-scheme:dark}
+.app{padding:max(16px,env(safe-area-inset-top)) 20px max(14px,env(safe-area-inset-bottom));background:radial-gradient(circle at 50% 35%,#20263a 0,#0d111b 43%,#070a10 82%);border-inline:1px solid rgba(255,255,255,.035)}
+.app:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(135deg,rgba(142,99,255,.08),transparent 42%,rgba(59,232,255,.06))}
+.app header{position:relative;z-index:2;min-height:54px}
+.icon{display:grid;place-items:center;width:52px;height:52px;color:var(--home-white)!important;border:1px solid var(--home-line);background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.035));box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 10px 30px rgba(0,0,0,.18);text-shadow:0 0 15px rgba(255,255,255,.34)}
+.icon:hover{border-color:rgba(66,255,121,.48);background:rgba(66,255,121,.1)}
+.icon[aria-pressed=false]{color:#70798e!important;text-decoration:line-through}
+.best{min-width:118px;justify-content:center;padding:8px 13px;border:1px solid rgba(255,255,255,.09);border-radius:16px;background:rgba(4,7,12,.42);backdrop-filter:blur(10px)}
+.best small{color:#9ba5ba!important;font-size:7px;letter-spacing:.17em;white-space:nowrap}.best b{color:var(--home-white)!important;font-size:29px;text-shadow:0 0 22px rgba(66,255,121,.22)}
+.hero{position:relative;min-height:380px;padding:16px 0 12px}.mode-pill{display:flex;align-items:center;gap:7px;margin:0 0 16px;padding:7px 11px;border:1px solid rgba(66,255,121,.18);border-radius:999px;background:rgba(66,255,121,.06);color:#adfbc3;font-size:7px;font-weight:800;letter-spacing:.17em}.mode-pill span{width:6px;height:6px;border-radius:50%;background:#42ff79;box-shadow:0 0 10px #42ff79}
+.balls{margin-bottom:18px;filter:drop-shadow(0 18px 24px rgba(0,0,0,.4))}.balls i{border:2px solid rgba(255,255,255,.22);box-shadow:inset 0 -9px 14px rgba(0,0,0,.17),0 7px 24px rgba(0,0,0,.5),0 0 22px color-mix(in srgb,currentColor 30%,transparent)}
+.eyebrow{color:#5dff8b!important;font-size:10px;letter-spacing:.3em;text-shadow:0 0 16px rgba(66,255,121,.38)}
+.hero h1{color:var(--home-white)!important;font-size:clamp(68px,20vw,94px);text-shadow:0 10px 34px rgba(0,0,0,.55)}.hero h1 span{color:transparent!important;-webkit-text-stroke:1.8px var(--home-white);filter:drop-shadow(0 6px 12px rgba(0,0,0,.4))}
+.tagline{color:var(--home-muted)!important;font-size:13px;line-height:1.6}.tagline strong{color:#e8ecf7;font-weight:700}
+.app nav{gap:13px}.play{min-height:84px;border:1px solid rgba(255,255,255,.32);background:linear-gradient(105deg,#36f972,#57ff96);box-shadow:0 16px 42px rgba(33,247,102,.2),inset 0 1px 0 rgba(255,255,255,.55)}.play span{color:#07100b!important}.play small{color:#123c20!important}.play b{color:#fff!important;border:1px solid rgba(255,255,255,.1);box-shadow:0 8px 18px rgba(0,0,0,.28)}
+.secondary{display:flex;align-items:center;justify-content:center;gap:9px;min-height:60px;color:#f0f3fb!important;border-color:var(--home-line);background:linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025));box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}.secondary span{color:#f0f3fb!important;white-space:nowrap}.secondary i{margin:0;color:#42eaff!important;text-shadow:0 0 14px rgba(59,232,255,.45)}.secondary:hover{border-color:rgba(59,232,255,.38);background:rgba(59,232,255,.08)}
+.app footer{color:#9aa4b9!important}.app footer span{color:#9aa4b9!important}.app footer i{background:#42ff79}
+button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+dialog{color:var(--home-white)!important}dialog .tagline{color:var(--home-muted)!important}
+@media(max-height:780px){.app{padding-top:12px}.icon{width:48px;height:48px}.hero{min-height:350px;padding:4px 0 8px}.mode-pill{margin-bottom:7px;padding:5px 9px}.balls{transform:scale(.84);margin-bottom:1px}.eyebrow{margin-bottom:6px}.hero h1{font-size:64px;line-height:.72}.tagline{margin-top:17px}.play{min-height:76px}.secondary{min-height:56px}.app footer{padding-top:13px}}
+@media(max-height:680px){.hero{min-height:290px}.mode-pill{display:none}.balls{transform:scale(.7);margin:-8px 0 -9px}.hero h1{font-size:55px}.tagline{margin-top:13px;font-size:11px}.play{min-height:68px}.secondary{min-height:50px}}
