@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>Base44 APP</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#070a11"><title>Ball Crash</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="gameplay.css"><link rel="stylesheet" href="ui-upgrade.css"><style>.game-menu,.next-bar button{min-height:44px}</style></head><body>
+<main class="app" id="menuScreen"><div class="glow g1"></div><div class="glow g2"></div><header><button class="icon" id="sound" aria-label="Toggle sound" aria-pressed="true">&#9835;</button><div class="best"><small>PERSONAL BEST</small><b id="best">00</b></div><button class="icon" id="settings" aria-label="Settings">&#9881;</button></header><section class="hero"><div class="mode-pill"><span></span>CLASSIC MODE</div><div class="balls" aria-hidden="true"><i class="b3">3</i><i class="b2">2</i><i class="b1">1</i></div><p class="eyebrow">AIM &middot; BOUNCE &middot; MERGE</p><h1>BALL<br><span>CRASH</span></h1><p class="tagline">One shot. One chain.<br><strong>How high can you climb?</strong></p></section><nav><button class="play" id="play"><span><small>START A RUN</small>PLAY</span><b>&#10140;</b></button><div class="row"><button class="secondary" id="how"><i>?</i><span>HOW TO PLAY</span></button><button class="secondary" id="scores"><i>&#9819;</i><span>HIGH SCORES</span></button></div></nav><footer><span>V0.3</span><i></i><span>READY TO CRASH</span></footer></main>
+<main class="game-screen" id="gameScreen" hidden><header class="game-header"><button id="menuButton" class="game-menu" aria-label="Return to menu"><span>&#9776;</span><small>MENU</small></button><div class="round"><small>SCORE</small><b id="score">0</b></div><div class="game-best"><span>&#9819;</span><div><small>BEST</small><b id="gameBest">0</b></div></div></header><section class="canvas-wrap"><canvas id="game" aria-label="Ball Crash game area"></canvas><div class="tutorial" id="tutorial"><b>DRAG TO AIM</b><span>Release to shoot</span></div></section><div class="next-bar"><span>NEXT</span><i id="nextBall">1</i><p id="status">MATCH EQUAL NUMBERS</p><button id="restart" aria-label="Restart game">&#8635;</button></div></main>
+<dialog id="modal"><section><button class="close" aria-label="Close">&times;</button><small id="modalLabel"></small><h2 id="modalTitle"></h2><div id="modalBody"></div></section></dialog><script src="game.js"></script></body></html>
