@@ -1,9 +1,8 @@
 {
-  "name": "untitled",
+  "name": "ball-crash",
+  "description": "Mobile aim, bounce, and merge arcade game",
   "site": {
-    "installCommand": "npm install",
-    "buildCommand": "npm run build",
-    "serveCommand": "npm run dev",
-    "outputDirectory": "./dist"
+    "outputDirectory": "./dist",
+    "serveCommand": "npm run dev"
   }
 }
