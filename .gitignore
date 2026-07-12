@@ -1,3 +1,6 @@
 work/
 outputs/
 *.log
+node_modules/
+dist/
+base44/.app.jsonc
